@@ -5,20 +5,21 @@
         id        = "com.moodle.moodlemobile"
         versionCode = "20210"
         version   = "3.4.0">
-    <name>Moodle Mobile</name>
+    <name>Focadepro Mobile</name>
 
     <description>
-        Moodle Mobile official app
+        Focadepro Mobile official app
     </description>
 
-    <author href="http://moodle.com" email="mobile@moodle.com">
-        Moodle Mobile team
+    <author href="http://Focadepro.com" email="mobile@Focadepro.com">
+        Focadepro Mobile team
     </author>
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
         <string>3.4.0</string>
     </gap:config-file>
 
+    <gap:platform name="ios" />
     <gap:platform name="android" />
 
     <access origin="*" />
@@ -50,6 +51,7 @@
     <preference name="BackupWebStorage" value="none" />
     <preference name="KeyboardDisplayRequiresUserAction" value="false" />
     <preference name="AllowInlineMediaPlayback" value="true" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
 
     <feature name="StatusBar">
         <param name="ios-package" value="CDVStatusBar" onload="true"/>
@@ -146,7 +148,7 @@
     <gap:plugin name="ch.ti8m.documenthandler" spec="https://github.com/ti8m/DocumentHandler.git" source="git" />
 
     <gap:config-file platform="android" parent="/manifest">
-         <application android:debuggable="false" />
+         <application android:debuggable="true" />
     </gap:config-file>
 
     <!-- See MOBILE-892 -->
