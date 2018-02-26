@@ -1,5 +1,5 @@
 <ion-view view-title="{{ 'mm.courses.searchcourses' | translate }}">
-    <ion-content mm-state-class>
+    <ion-content mm-state-class> 
         <mm-searchbox submit-action="search" placeholder="{{ 'mm.courses.search' | translate }}" initial-value="{{searchText}}" search-label="{{ 'mm.courses.search' | translate}}" autofocus="true"></mm-searchbox>
         <div ng-if="courses">
             <p class="item item-divider">{{ 'mm.courses.totalcoursesearchresults' | translate:{$a: total} }}</p>
